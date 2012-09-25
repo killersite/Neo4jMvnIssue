@@ -1,0 +1,14 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-09-24 11:40:53
+project --topLevelPackage com.ex --projectName Neo4jMvnIssue
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa --class ~.domain.Restaurant --activeRecord false
+repository jpa --interface ~.repository.RestaurantRepository --entity ~.domain.Restaurant
+service --interface ~.service.RestaurantService --entity ~.domain.Restaurant
+web mvc setup
+web mvc all --package ~.web
+focus --class ~.domain.Restaurant
+exit
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log closed at 2012-09-24 11:58:23
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-09-24 12:00:03
+focus --class ~.domain.Restaurant
+field string --fieldName name
