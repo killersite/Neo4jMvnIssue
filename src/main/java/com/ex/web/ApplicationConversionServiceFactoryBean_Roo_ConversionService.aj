@@ -21,7 +21,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Restaurant, String> ApplicationConversionServiceFactoryBean.getRestaurantToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.ex.domain.Restaurant, java.lang.String>() {
             public String convert(Restaurant restaurant) {
-                return "(no displayable fields)";
+                return new StringBuilder().append(restaurant.getName()).toString();
             }
         };
     }

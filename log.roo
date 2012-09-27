@@ -12,3 +12,4 @@ exit
 // Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-09-24 12:00:03
 focus --class ~.domain.Restaurant
 field string --fieldName name
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-09-26 22:30:23
